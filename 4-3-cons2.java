@@ -1,22 +1,22 @@
-class cons2 {
+class paracons {
     int id;
     String name;
     void display(){
         System.out.println(id+" "+name);
     }
     
-    cons2(){
+    paracons(){
         id=0;
         name=null;
     }
     
-    public cons2(int i,String n){
+    public paracons(int i,String n){
         id=i;
         name=n;
     }
     public static void main(String[] args) {
-     cons2 s1=new cons2(1,"kartik");   
-     cons2 s2=new cons2(2,"kd");
+     paracons s1=new paracons(1,"kartik");   
+     paracons s2=new paracons(2,"kd");
      s1.display();
      s2.display();   
     }
