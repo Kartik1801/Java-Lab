@@ -3,7 +3,7 @@ class bs {
 
   static int search (int a[],int l,int h,int key){
         if(l<h){
-        int m=(l+h)/2;
+        int m=l+(h-l)/2;
         if(key==a[m]){
             return m;
         }
