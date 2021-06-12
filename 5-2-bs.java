@@ -1,23 +1,24 @@
 import java.util.Scanner;
 class bs {
 
-  static int search (int a[],int l,int h,int key){
-        if(l<h){
+ static int search (int a[],int l,int h,int key){
+        if(l<=h)
+        {
         int m=l+(h-l)/2;
         if(key==a[m]){
             return m;
         }
         else if(a[m]>key){
-            search(a,l,m-1,key);
+            return search(a,l,m-1,key);
         }
         else if(a[m]<key){
-            search(a, m+1, h, key);
+            return search(a, m+1, h, key);
         }
         }
-            return -1;
+        return -1;
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         int a[]={10,20,30,40,50,60,70};
         int n = a.length;
         Scanner sc= new Scanner(System.in);
