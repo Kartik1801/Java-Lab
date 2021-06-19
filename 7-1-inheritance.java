@@ -1,4 +1,3 @@
-import jdk.internal.vm.PostVMInitHook;
 
 class calc{
 int  r;
