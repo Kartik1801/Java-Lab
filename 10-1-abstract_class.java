@@ -1,3 +1,4 @@
+//Concept of abstract classes in java
     abstract class c1{
         abstract void message();
     }
